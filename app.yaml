@@ -1,0 +1,56 @@
+application: swgae10
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /js
+  static_dir: js
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /
+  script: main.app
+
+- url: /RequestSong
+  script: iTunes.app
+
+- url: /DropBox
+  script: DropBox.app
+
+- url: /index
+  script: Musixmatch.app
+
+- url: /logout
+  script: Logout.app
+
+- url: /buscarCancion
+  script: Musixmatch.app
+
+- url: /buscarArtista
+  script: Musixmatch.app
+
+- url: /letraCancion
+  script: Musixmatch.app
+
+- url: /datosArtista
+  script: Musixmatch.app
+
+- url: /Doauth_callback
+  script: DropBox.app
+
+- url: /SaveSongDropBox
+  script: DropBox.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest

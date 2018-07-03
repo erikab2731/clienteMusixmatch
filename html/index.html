@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="../stylesheets/style.css" media="screen" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+
+<div align="right" ><button  type="button" class="btn btn-secondary" style="text-align:right" onclick="location.href='/logout';">Cerrar Sesión</button></div>
+
+<div id="main">
+
+    <table width="100%" id="tablaPrincipal">
+        <tr>
+            <td>
+                <div class="columna">
+                  <h1>Buscar canción</h1>
+                    <h2>Escribe el título de la canción para encontrar tu canción favorita!</h2>
+                      <div>
+                        <input type="search" id="campo1">
+                        <button type="button" class="btn btn-secondary"  id="boton1">Buscar</button>
+                      </div>
+                </div>
+                <div class="columna" id="resultados1"></div>
+            </td>
+            <td>
+               <div class="columna">
+                  <h1>Buscar cantante</h1>
+                   <h2>Escribe el nombre del cantante y cotillea toda su música!</h2>
+
+                      <div>
+                        <input type="search" id="campo2">
+                        <button type="button" class="btn btn-secondary" id="boton2">Buscar</button>
+                      </div>
+
+
+                </div>
+                <div  class ="columna" id="resultados2"></div>
+            </td>
+            <td>
+                 <div class="columna">
+                  <h1>Top 5  </h1>
+                    <h2>Top de los 5 cantantes más populares en España </h2>
+                      <div class = "top">
+                            {{ artistas|safe }}
+                      </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/Musixmatch.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ nombreCancion }} Lyrics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="../stylesheets/style.css" media="screen" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+<br />
+      <div align = "center"><a href="/index">Ir a la Página Principal</a></div>
+
+<br />
+
+    <center><div id="mensaje"></div>
+        <br /></center>
+ <div align ="center">
+
+        <button type="button" class="btn btn-secondary" style="{{estiloBoton}}" id="boton2">Guardar en Dropbox </button>
+        <span style="{{estiloMensaje}}">Inicia sesión con DropBox para guardar el fichero <br /></span>
+        <button type="button" class="btn btn-secondary" id="boton3">Escucha una preview </button>
+<br />
+     <br />
+     <div id="bloqueEscucha">
+
+     </div>
+
+  </div>
+
+
+<div id="contletra" align ="center">
+
+    <h3 align ="center" id="titulo">{{ nombreCancion }} by</h3>
+    <h4 align = "center" id="artista">{{ artist }}</h4>
+<br />
+    <div align ="center" id="letraCancion" class="columna">
+
+    {% for item in lyrics %}
+        {{ item }}
+        <br />
+    {% endfor %}
+
+    </div>
+
+
+
+</div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/guardar.js"></script>
+<script type="text/javascript" src="../js/escucharCancion.js"></script>
+</body>
+</html>
