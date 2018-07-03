@@ -2,8 +2,8 @@
 Aplicación web para buscar y reproducir canciones
 
 ## Autores 
-Erika Bracamonte
-Paula de Jaime
+- Erika Bracamonte
+- Paula de Jaime
 
 ## Navegadores recomendados  
 - Google Chrome (Version 66.0.3359.139)
