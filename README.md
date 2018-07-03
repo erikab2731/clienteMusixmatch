@@ -1,24 +1,24 @@
 # clienteMusixmatch
 Aplicación web para buscar y reproducir canciones
 
-# Autores 
+## Autores 
 Erika Bracamonte
 Paula de Jaime
 
-# Navegadores recomendados  
+## Navegadores recomendados  
 - Google Chrome (Version 66.0.3359.139)
 
 Es posible que ciertas funcionalidades no se muestren o se muestren erróneamente en otros navegadores, ya que se ha utilizado Chrome en todo el proceso de desarrollo.
 
 NOTA: La reprodución de la canción no funciona en Mozilla Firefox por no ser compatible.
 
-# Utilizados   
+## Utilizados   
 - API iTunes
 - API musixmatch
 - API dropbox
 - WebScrapping con BeautifulSoup
 
-# Breve Descripción  
+## Breve Descripción  
 Con la aplicación creada (https://swgae10.appspot.com) se puede iniciar sesión mediante Google y Dropbox.
 
 Una vez iniciada la sesión, se pueden buscar letras de canciones introduciendo el título de la canción en el recuadro de "Buscar Canción". Ejemplo "Skyscraper".
