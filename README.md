@@ -2,7 +2,7 @@
 Aplicación web para buscar y reproducir canciones
 
 ## Autores 
-- Erika Bracamonte
+- Erika Bracamonte @erikab2731
 - Paula de Jaime
 
 ## Navegadores recomendados  
